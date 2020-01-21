@@ -44,7 +44,7 @@ try {
             <td id="td">Awards?</td>
             <td><?php if ($series[0]["has_won_awards"] > 1) {
                     echo "Ja, " . $series[0]["has_won_awards"] . " awards";
-                } elseif ($series[0]["has_won_awards"] = 1) {
+                } elseif ($series[0]["has_won_awards"] === 1) {
                     echo "Ja, " . $series[0]["has_won_awards"] . " award";
                 } else {
                     echo "Nee";
